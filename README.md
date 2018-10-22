@@ -38,13 +38,13 @@ Feito isso a API está pronta para uso!
 ## Listagem de recursos
 
 Segue a lista de recurso criados:
-GET /api/v1/jogos - listagem de jogos
-GET /api/v1/jogos/{id} - retorna um jogo especifico
-GET /api/v1/times - listagem de times
-GET /api/v1/times/{id} - retorna um time especifico
-GET /api/v1/locais - listagem de locais para partida
-GET /api/v1/locais/{id} - retorna um local especifico
-GET /api/v1/jogos/horarios/{horario} - listagem de jogos de um determinado horário
+- GET /api/v1/jogos - listagem de jogos
+- GET /api/v1/jogos/{id} - retorna um jogo especifico
+- GET /api/v1/times - listagem de times
+- GET /api/v1/times/{id} - retorna um time especifico
+- GET /api/v1/locais - listagem de locais para partida
+- GET /api/v1/locais/{id} - retorna um local especifico
+- GET /api/v1/jogos/horarios/{horario} - listagem de jogos de um determinado horário
 Ex. RESPONSE
     [
         {
@@ -68,7 +68,7 @@ Ex. RESPONSE
             "local_nome": "Arena"
         }
     ]
-GET /api/v1/times/{id}/jogos/ - listagem de jogos de um determinado time
+- GET /api/v1/times/{id}/jogos/ - listagem de jogos de um determinado time
 Ex. RESPONSE
     [
         {
@@ -83,7 +83,7 @@ Ex. RESPONSE
         }
     ]
 
-POST /api/v1/jogos - cria um novo jogo
+- POST /api/v1/jogos - cria um novo jogo
 Ex. BODY:
     {
         "local": "1",
@@ -93,7 +93,7 @@ Ex. BODY:
         "descricao": "FLA X VAS"
     }
 
-POST /api/v1/times - cria um novo time
+- POST /api/v1/times - cria um novo time
 Ex. BODY:
     {
         "nome": "Clube Regatas Flamengo",
@@ -120,20 +120,20 @@ ou via form-data para enviar a imagem da flag (bandeira)
     CFC
     ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
-POST /api/v1/locais - cria um novo local
+- POST /api/v1/locais - cria um novo local
 Ex. BODY:
     {
         "nome": "Maracanã"
     }
 
 Para alterar apenas a bandeira de um time
-POST /api/v1/times/{id}/flag - atualiza a bandeira de um time.
+- POST /api/v1/times/{id}/flag - atualiza a bandeira de um time.
 
 Os métodos PUT utilizam o mesmo corpo do body
-PUT /api/v1/jogos/{id} - atualiza um jogo especifico
-PUT /api/v1/times/{id} - atualiza um time especifico //não é possivel atualizar a flag (bandeira) via PUT
-PUT /api/v1/locais/{id} - atualiza um local especifico
+- PUT /api/v1/jogos/{id} - atualiza um jogo especifico
+- PUT /api/v1/times/{id} - atualiza um time especifico //não é possivel atualizar a flag (bandeira) via PUT
+- PUT /api/v1/locais/{id} - atualiza um local especifico
 
-DELETE /api/v1/jogos/{id} - deleta um jogo especifico
-DELETE /api/v1/times/{id} - deleta um time especifico
-DELETE /api/v1/locais/{id} - deleta um local especifico
+- DELETE /api/v1/jogos/{id} - deleta um jogo especifico
+- DELETE /api/v1/times/{id} - deleta um time especifico
+- DELETE /api/v1/locais/{id} - deleta um local especifico
